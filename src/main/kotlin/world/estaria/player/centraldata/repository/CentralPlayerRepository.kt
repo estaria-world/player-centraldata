@@ -12,8 +12,4 @@ class CentralPlayerRepository(
 ) : AbstractMorphiaRepository<String, CentralPlayerEntity>(
     datastore,
     CentralPlayerEntity::class.java
-) {
-
-
-
-}
+)

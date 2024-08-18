@@ -9,8 +9,16 @@ import java.util.UUID
 
 interface CentralPlayerData {
 
+    /**
+     * Gets the uniqueId from this player
+     * @return uniqueId
+     */
     fun getUniqueId(): UUID
 
+    /**
+     * Gets the fruties [Sector] from this player
+     * @return fruties sector
+     */
     fun getFruties(): Sector
 
 }

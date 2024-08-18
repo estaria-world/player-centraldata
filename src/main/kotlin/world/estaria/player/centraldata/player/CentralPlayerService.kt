@@ -12,8 +12,7 @@ import java.util.concurrent.CompletableFuture
 
 class CentralPlayerService {
 
-    private val datastore = PlayerCentralDataApi.datastore
-    private val repository = CentralPlayerRepository(datastore)
+    private val repository = CentralPlayerRepository(PlayerCentralDataApi.datastore)
 
     /**
      * Gets or creates a new [CentralPlayerData] for the player

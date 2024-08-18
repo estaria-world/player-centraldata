@@ -8,7 +8,7 @@ import java.util.UUID
  * @author Niklas Nieberler
  */
 
-@Entity
+@Entity("players")
 data class CentralPlayerEntity(
     @Id val uniqueId: String = UUID.randomUUID().toString(),
     val fruties: Long = 0

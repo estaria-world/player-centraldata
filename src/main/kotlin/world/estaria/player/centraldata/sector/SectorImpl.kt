@@ -19,9 +19,10 @@ class SectorImpl(
 ) : Sector {
 
     override fun set(value: Long) {
+        //TODO: call protobuf event here
         async {
             this.datastore.find(CentralPlayerEntity::class.java)
-                .filter(Filters.gte("uniqueId", this.uniqueId))
+                .filter(Filters.gte("uniqueId", this.uniqueId.toString()))
                 .update(UpdateOperators.set(this.id, value))
                 .execute()
         }

@@ -19,11 +19,8 @@ dependencies {
 
     // avionik dependencies
     compileOnly("world.avionik:minecraft-common:1.0.2")
+    runtimeOnly("world.avionik:minecraft-common:1.0.2")
     implementation("world.avionik:database-simplified-kit:1.1.0")
-    runtimeOnly("world.avionik:config-kit:1.0.2")
-
-    // simplecloud dependencies
-    runtimeOnly("eu.thesimplecloud.jsonlib:json-lib:1.0.10")
 }
 
 publishing {

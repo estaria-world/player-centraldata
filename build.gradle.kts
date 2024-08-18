@@ -18,6 +18,7 @@ dependencies {
     implementation(kotlin("stdlib"))
 
     // avionik dependencies
+    compileOnly("world.avionik:minecraft-common:1.0.2")
     implementation("world.avionik:database-simplified-kit:1.1.0")
     runtimeOnly("world.avionik:config-kit:1.0.2")
 
